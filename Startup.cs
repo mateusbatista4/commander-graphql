@@ -25,14 +25,14 @@ namespace commander_graphql
             {
                 app.UseDeveloperExceptionPage();
             }
-
+        
             app.UseRouting();
-
+            
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapGet("/", async context =>
                 {
-                    await context.Response.WriteAsync("Hello World!");
+                    await context.Response.WriteAsync("Hello World!");                    
                 });
             });
         }
